@@ -1,6 +1,4 @@
-# SECURITY
-
-이 저장소의 보안 정책. **사람이든 AI 에이전트(Claude Code, Hermes 등)든 여기서 작업할 때 반드시 따른다.**
+- 이 저장소의 보안 정책. **사람이든 AI 에이전트(Claude Code, Hermes 등)든 여기서 작업할 때 반드시 따른다.**
 
 ## 시크릿 위치 (저장소엔 없음)
 모든 토큰/시크릿은 `~/.hermes/`(Hermes 프로파일) 안에만 있고, **이 저장소에는 없다.**
@@ -8,7 +6,7 @@
   `~/.hermes/profiles/qa-bot/.env`, `~/.hermes/config.yaml`(`env:` 필드), `~/.hermes/auth.json`, `~/.hermes/mcp-tokens/`
 - 저장소의 `.env`는 **gitignore**되고 식별자만 담는다(값 없음). `.env.example`는 빈 템플릿.
 
-## 🤖 AI 에이전트 작업 규칙 (필수)
+## AI 에이전트 작업 규칙 (필수)
 **에이전트는 토큰 값을 절대 확인·출력·전송하지 않는다.** 이 저장소에서 작업하는 모든 에이전트는 다음을 지킨다:
 
 1. **시크릿 파일을 읽지 않는다.** `~/.hermes/**/.env`, `config.yaml`의 `env:`/`token`/`auth` 필드, `auth.json`, `mcp-tokens/` 를 `cat`/`grep`/`Read`로 **값이 보이게** 열지 않는다.
@@ -34,5 +32,5 @@
 - 토큰이 한 번이라도 노출되면(로그/화면/커밋 등) **즉시 재발급**한다.
 - 정기 회전 권장: Figma PAT·Notion 통합 토큰 분기별.
 
-## ⚠️ 알려진 노출 (회전 필요)
+##  알려진 노출 (회전 필요)
 - 설정 과정에서 **Figma PAT가 출력/CLI 인자에 노출**된 적 있음 → **재발급 권장.**
