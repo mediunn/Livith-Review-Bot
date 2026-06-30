@@ -11,6 +11,13 @@ Discord 멘션 → Hermes (qa-bot 프로파일)
              → 출처(FR 번호 / 프레임) 달린 답변
 ```
 
+### 실행 예시
+
+| 근거 있는 답변 | 환각 방지 | 스냅샷 버전 인식 |
+|:---:|:---:|:---:|
+| ![근거 답변](assets/normal-question.png) | ![환각 방지](assets/incorrect-question.png) | ![버전 확인](assets/prd-version.png) |
+| PRD 질문에 **FR 출처**로 답합니다 | 스코프 밖이면 지어내지 않고 **"모른다"** | 현재 PRD 버전·**갱신 시각**을 압니다 |
+
 ### 막연한 한 줄을 deep-interview로 80% 기준까지 구체화
 
 시작은 "PRD QA 봇을 만들자"는 막연한 한 줄이었습니다. 빌더 쪽에 OMC를 얹고, 그 `deep-interview` 스킬(소크라테스식 질문 + 모호도 수치화)로 범위를 깎았습니다.
