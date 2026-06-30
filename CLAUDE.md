@@ -2,6 +2,8 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+> 🔒 **보안 (필수): `SECURITY.md`를 따른다.** 토큰 값을 절대 읽거나 출력하지 않는다 — `~/.hermes`의 `.env`/`auth.json`/`config.yaml`의 `env:`·`token` 필드, `mcp-tokens/`를 값이 보이게 열지 말 것. 존재 확인은 마스킹(`sed 's/=.*/=✓/'`)으로만. 토큰 입력은 사용자가 직접 한다. 노출된 토큰은 재발급 권장.
+
 # PRD·디자인 Q&A 디스코드 봇
 
 ## 무엇을 만드나
